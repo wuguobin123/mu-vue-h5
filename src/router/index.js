@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import { isLogin } from "../utils/authority";
+import { isLogin } from "../utils/authority";
 
 Vue.use(VueRouter);
 
@@ -360,7 +360,7 @@ const router = new VueRouter({
   routes
 });
 
-/* router.beforeEach((to, from, next) => {
+router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title;
   }
@@ -376,6 +376,6 @@ const router = new VueRouter({
   } else {
     next();
   }
-}); */
+});
 
 export default router;

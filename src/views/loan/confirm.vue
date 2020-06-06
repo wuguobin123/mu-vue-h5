@@ -7,19 +7,27 @@
       <div slot="action" class="range-title">
         期限
       </div>
-       <div slot="desc" class="my-range">
-        <nut-slider v-model="stages" :range="[45,90]" :showLabel="true" :showRangeTxt="true"></nut-slider>
+      <div slot="desc" class="my-range">
+        <nut-slider
+          v-model="stages"
+          :range="[45, 90]"
+          :showLabel="true"
+          :showRangeTxt="true"
+        ></nut-slider>
       </div>
     </KuCell>
     <div class="total">
       <KuCell :label="'预计还款总额'">
-        <div slot="desc" class="money">
-          <span>10000</span>元
-        </div>
+        <div slot="desc" class="money"><span>10000</span>元</div>
       </KuCell>
       <KuCell :label="'利息'" :desc="'100.00元'"></KuCell>
     </div>
-    <kuButton @btnFun="handleSubmit" btnName="确认" :isClick="isClickForBtn" :isFixed="false"></kuButton>
+    <kuButton
+      @btnFun="handleSubmit"
+      btnName="确认"
+      :isClick="isClickForBtn"
+      :isFixed="false"
+    ></kuButton>
   </div>
 </template>
 
@@ -38,9 +46,7 @@ export default {
       stages: 50
     };
   },
-  watch: {
-
-  },
+  watch: {},
   computed: {},
   methods: {
     handleSubmit() {
@@ -88,7 +94,7 @@ export default {
     float: right;
   }
   .range-title {
-        font-size: 0.4rem;
+    font-size: 0.4rem;
     color: #5b5e66;
     letter-spacing: 0;
   }

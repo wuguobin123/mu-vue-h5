@@ -116,9 +116,7 @@ export default {
       });
     }
   },
-  created() {
-
-  },
+  created() {},
   mounted() {}
 };
 </script>

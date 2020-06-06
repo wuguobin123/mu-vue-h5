@@ -86,16 +86,15 @@
         <li>企业联系人授权书</li>
       </ul>
     </KuStatus> -->
-      <nut-slider class="my-range"
-   v-model="val1" 
-   :range="[45,90]"
-   :showLabel="true" 
-   :showRangeTxt="true" 
-
->
-
-</nut-slider>
-<span>{{val1}}</span>
+    <nut-slider
+      class="my-range"
+      v-model="val1"
+      :range="[45, 90]"
+      :showLabel="true"
+      :showRangeTxt="true"
+    >
+    </nut-slider>
+    <span>{{ val1 }}</span>
   </div>
 </template>
 
@@ -121,7 +120,7 @@ export default {
   data() {
     return {
       imgUrl: "audit-icon.png",
-       val1: 50,
+      val1: 50,
       tabList3: [
         {
           tabTitle: "主页",
