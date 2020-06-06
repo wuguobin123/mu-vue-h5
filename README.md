@@ -1,4 +1,4 @@
-# ktx-supplychainchannel-h5
+# mu-vue-h5
 
 ## Project setup
 ```
